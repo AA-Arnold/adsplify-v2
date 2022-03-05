@@ -94,7 +94,7 @@ class Navbar extends Component {
                   </li>
 
                   <li className="nav-item">
-                    <Link className="nav-link" to="/">
+                    <Link className="nav-link" to="/ecommerce-checkout">
                       <i className="ri-wallet-line mr-2"></i>{' '}
                       {this.props.t('Payment')}
                     </Link>
