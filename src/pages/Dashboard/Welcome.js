@@ -27,7 +27,7 @@ class Welcome extends Component {
                                       <Card>
                                     <CardImg className="img-fluid" src={img6} alt="future" />
                                     <CardImgOverlay>
-                                        <h1 className="text-white mt-0">Welcome to the Future of Advert</h1>
+                                        <h1 className="text-white mt-0">Welcome to the Future of Adverts</h1>
                                         <p className="text-light">Discover the world of adplify influencers and promoters. Find Influencers that you want to work with <br/> and create campaign with ease.
                                         </p>
                                         <CardText className="text-light">
