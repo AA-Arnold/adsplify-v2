@@ -493,69 +493,7 @@ class UiButtons extends Component {
                                         </Label>
                         </div>
                       </Col>
-                      <Col xl={6}>
-                        <div
-                          className="btn-group btn-group-toggle"
-                          data-toggle="buttons"
-                        >
-                          <Label
-                                            className=
-                                                {
-                                                    this.state.radio1
-                                                    ? "btn btn-light active"
-                                                    : "btn btn-light"
-                                                }
-                                        >
-                                            <Input type="radio" name="options" id="option1" defaultChecked
-                                            onClick={() =>
-                                                this.setState({
-                                                    radio1: true,
-                                                    radio2: false,
-                                                    radio3: false
-                                                })
-                                            }  
-                                                /> Active
-                                        </Label>
-
-                                        <Label
-                                            className=
-                                                {
-                                                    this.state.radio2
-                                                    ? "btn btn-light active"
-                                                    : "btn btn-light"
-                                                }
-                                        >
-                                            <Input type="radio" name="options" id="option1"
-                                            onClick={() =>
-                                                this.setState({
-                                                    radio1: false,
-                                                    radio2: true,
-                                                    radio3: false
-                                                })
-                                            }  
-                                                /> Radio
-                                        </Label>
-
-                                        <Label
-                                            className=
-                                                {
-                                                    this.state.radio3
-                                                    ? "btn btn-light active"
-                                                    : "btn btn-light"
-                                                }
-                                        >
-                                            <Input type="radio" name="options" id="option1"
-                                            onClick={() =>
-                                                this.setState({
-                                                    radio1: false,
-                                                    radio2: false,
-                                                    radio3: true
-                                                })
-                                            }  
-                                                /> Radio
-                                        </Label>
-                        </div>
-                      </Col>
+                      Rounded buttons
                     </Row>
                   </CardBody>
                 </Card>

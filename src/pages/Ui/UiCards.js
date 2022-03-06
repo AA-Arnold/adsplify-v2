@@ -224,7 +224,7 @@ class UiCards extends Component {
                                 <Card>
                                     <CardImg className="img-fluid" src={img6} alt="Skote" />
                                     <CardImgOverlay>
-                                        <CardTitle className="text-white mt-0">Card title</CardTitle>
+                                        <CardTitle className="text-white mt-0">Card titlessss</CardTitle>
                                         <CardText className="text-light">This is a wider card with supporting text below as a
                                         natural lead-in to additional content. This content is a little bit
                                             longer.</CardText>

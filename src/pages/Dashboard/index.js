@@ -14,6 +14,14 @@ import RecentlyActivity from "./RecentlyActivity";
 import RevenueByLocations from "./RevenueByLocations";
 import ChatBox from "./ChatBox";
 import LatestTransactions from "./LatestTransactions";
+import Welcome from "./Welcome";
+import MyFeed from "./MyFeed";
+import Categories from "./Categories";
+import Instagram from "./Instagram";
+import TikTok from "./TikTok";
+import Featured from "./Featured";
+import Blogs from "./Blogs";
+import RadioStations from "./RadioStations";
 
 class Dashboard extends Component {
     constructor(props) {
@@ -39,46 +47,37 @@ class Dashboard extends Component {
 
                     <Breadcrumbs title="Dashboard" breadcrumbItems={this.state.breadcrumbItems} />
                         <Row>
-                            <Col xl={8}>
+                            <Col xl={12}>
                                 <Row>
-                                    <MiniWidgets reports={this.state.reports} />
+                                    <Welcome reports={this.state.reports} />
                                 </Row>
                                 
                                 {/* revenue Analytics */}
-                                <RevenueAnalytics/>
+                                <MyFeed />
+                              
                             </Col>
 
-                            <Col xl={4}>
-
-                                {/* sales Analytics */}
-                                <SalesAnalytics/>
-
-                                {/* earning reports */}
-                                <EarningReports/>
-
-                            </Col>
+                           
                         </Row>
                         
 
                         <Row>
-                            {/* sources */}
-                            <Sources/>
-
-                            {/* recent activity */}
-                            <RecentlyActivity/>
-
-                            {/* revenue by locations */}
-                            <RevenueByLocations/>
+                        <Categories/>
+                        
+                        <Featured/>
 
                         </Row>
                         
 
                         <Row>
-                            {/* chat box */}
-                            <ChatBox/>
-
-                            {/* latest transactions */}
-                            <LatestTransactions/>
+                        
+                            <Instagram/>
+                            <TikTok/>
+                        </Row>
+                        <Row>
+                        
+                           <Blogs/>
+                           <RadioStations/>
                         </Row>
 
                     </Container> 
