@@ -108,7 +108,7 @@ class Login extends Component {
                     </Col>
                     <Col lg={8}>
                         <div className="authentication-bg">
-                            <div className="bg-overlay"></div>
+                            {/* <div className="bg-overlay"></div> */}
                         </div>
                     </Col>
                 </Row>

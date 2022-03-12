@@ -28,9 +28,9 @@ import NotificationDropdown from '../CommonForBoth/TopbarDropdown/NotificationDr
 import ProfileMenu from '../CommonForBoth/TopbarDropdown/ProfileMenu';
 
 //Import Logos
-import logoSmLight from '../../assets/images/logo-sm-light.png';
-import logoLight from '../../assets/images/logo-sm-light.png';
-import logoDark from '../../assets/images/logo-sm-light.png';
+import logoSmLight from '../../assets/images/LogoAds.svg';
+import logoLight from '../../assets/images/LogoAds.svg';
+import logoDark from '../../assets/images/LogoAds.svg';
 import logoSmDark from '../../assets/images/logo-sm-dark.png';
 
 // profile images

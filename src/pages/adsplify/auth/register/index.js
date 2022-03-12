@@ -59,7 +59,7 @@ class Register extends Component {
         <div>
           <Container fluid className="p-0">
             <Row className="no-gutters">
-              <Col lg={5}>
+              <Col lg={6}>
                 <div className="authentication-page-content p-4 d-flex align-items-center min-vh-100">
                   <div className="w-100">
                     <Row className="justify-content-center">
@@ -221,9 +221,9 @@ class Register extends Component {
                   </div>
                 </div>
               </Col>
-              <Col lg={7}>
+              <Col lg={6}>
                 <div className="authentication-bg">
-                  <div className="bg-overlay"></div>
+                  {/* <div className="bg-overlay"></div> */}
                 </div>
               </Col>
             </Row>

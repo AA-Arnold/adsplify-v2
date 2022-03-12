@@ -206,9 +206,9 @@ const authProtectedRoutes = [
 const publicRoutes = [
 	{ path: "/login2", component: Login2 },
 	{ path: "/register2", component: Register2 },
-	{ path: "/register", component: Register },
+	{ path: "/register", component: Register2 },
 	{ path: "/logout", component: Logout },
-	{ path: "/login", component: Login },
+	{ path: "/login", component: Login2 },
 	{ path: "/forgot-password", component: ForgetPwd },
 	{ path: "/register", component: Register },
 	{ path: "/auth-lock-screen", component: AuthLockScreen },

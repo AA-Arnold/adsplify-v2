@@ -22,7 +22,7 @@ import { AvForm, AvField } from 'availity-reactstrap-validation';
 import { checkLogin, apiError } from '../../../../store/actions';
 
 // import images
-import logodark from '../../../../assets/images/logo-sm-light.png';
+import logodark from '../../../../assets/images/LogoAds.svg';
 
 class Login extends Component {
   constructor(props) {
@@ -56,7 +56,7 @@ class Login extends Component {
         <div>
           <Container fluid className="p-0">
             <Row className="no-gutters">
-              <Col lg={5}>
+              <Col lg={6}>
                 <div className="authentication-page-content p-4 d-flex align-items-center min-vh-100">
                   <div className="w-100">
                     <Row className="justify-content-center">
@@ -65,7 +65,7 @@ class Login extends Component {
                           <div className="text-left">
                             <div>
                               <Link to="/" className="logo">
-                                <img src={logodark} height="20" alt="logo" />
+                                <img src={logodark} height="80" alt="logo" />
                               </Link>
                             </div>
 
@@ -163,9 +163,7 @@ class Login extends Component {
                                 Sign up now!{' '}
                               </Link>{' '}
                             </p>
-                            <p>
-                              © 2022 Adsplify.
-                            </p>
+                            <p>© 2022 Adsplify.</p>
                           </div>
                         </div>
                       </Col>
@@ -173,9 +171,9 @@ class Login extends Component {
                   </div>
                 </div>
               </Col>
-              <Col lg={7}>
+              <Col lg={6}>
                 <div className="authentication-bg">
-                  <div className="bg-overlay"></div>
+                  {/* <div className="bg-overlay"></div> */}
                 </div>
               </Col>
             </Row>

@@ -70,7 +70,7 @@ class Navbar extends Component {
         <div className="topnav">
           <Container fluid>
             <nav
-              className="navbar navbar-light navbar-expand-lg topnav-menu d-flex justify-content-between"
+              className="navbar navbar-light navbar-expand-lg topnav-menu d-flex justify-content-between py-1"
               id="navigation"
             >
               <Collapse
