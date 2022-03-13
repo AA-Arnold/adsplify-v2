@@ -6,15 +6,6 @@ import { Link } from 'react-router-dom';
 
 // reactstrap
 import {
-  Row,
-  Col,
-  Dropdown,
-  DropdownToggle,
-  DropdownMenu,
-  Form,
-  Input,
-  InputGroup,
-  InputGroupAddon,
   Button,
   FormGroup,
 } from 'reactstrap';
@@ -28,21 +19,22 @@ import NotificationDropdown from '../CommonForBoth/TopbarDropdown/NotificationDr
 import ProfileMenu from '../CommonForBoth/TopbarDropdown/ProfileMenu';
 
 //Import Logos
-import logoSmLight from '../../assets/images/LogoAds.svg';
-import logoLight from '../../assets/images/LogoAds.svg';
-import logoDark from '../../assets/images/LogoAds.svg';
-import logoSmDark from '../../assets/images/logo-sm-dark.png';
+import logoSmLight from '../../assets/images/adLogo.png';
+import logoLight from '../../assets/images/adLogo.png';
+import logoDark from '../../assets/images/adLogo.png';
+import logoSmDark from '../../assets/images/adLogo.png';
+// import logoSmDark from '../../assets/images/logo-sm-dark.png';
 
-// profile images
-import github from '../../assets/images/brands/github.png';
-import bitbucket from '../../assets/images/brands/bitbucket.png';
-import dribbble from '../../assets/images/brands/dribbble.png';
-import dropbox from '../../assets/images/brands/dropbox.png';
-import mail_chimp from '../../assets/images/brands/mail_chimp.png';
-import slack from '../../assets/images/brands/slack.png';
+// // profile images
+// import github from '../../assets/images/brands/github.png';
+// import bitbucket from '../../assets/images/brands/bitbucket.png';
+// import dribbble from '../../assets/images/brands/dribbble.png';
+// import dropbox from '../../assets/images/brands/dropbox.png';
+// import mail_chimp from '../../assets/images/brands/mail_chimp.png';
+// import slack from '../../assets/images/brands/slack.png';
 
-//Import mega menu image
-import megamenuImg from '../../assets/images/megamenu-img.png';
+// //Import mega menu image
+// import megamenuImg from '../../assets/images/megamenu-img.png';
 
 // Redux Store
 import { toggleRightSidebar } from '../../store/actions';
@@ -131,7 +123,7 @@ class Header extends Component {
                 </Link>
               </div>
 
-              <Button
+              {/* <Button
                 color="none"
                 type="button"
                 size="sm"
@@ -141,7 +133,7 @@ class Header extends Component {
                 data-target="#topnav-menu-content"
               >
                 <i className="ri-menu-2-line align-middle"></i>
-              </Button>
+              </Button> */}
 
               {/* <Form className="app-search d-none d-lg-block">
                             <div className="position-relative">

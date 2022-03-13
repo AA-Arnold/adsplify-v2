@@ -67,7 +67,7 @@ class Navbar extends Component {
   render() {
     return (
       <React.Fragment>
-        <div className="topnav">
+        <div className="topnav d-none d-sm-flex">
           <Container fluid>
             <nav
               className="navbar navbar-light navbar-expand-lg topnav-menu d-flex justify-content-between py-1"

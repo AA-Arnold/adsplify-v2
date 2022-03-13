@@ -1,33 +1,13 @@
 import React, { Component } from 'react';
-import {
-  Col,
-  Card,
-  CardTitle,
-  CardImgOverlay,
-  CardImg,
-  CardText,
-  FormGroup,
-  Label,
-  Input,
-} from 'reactstrap';
+import { Col, Card, Form, Input, CardImgOverlay, CardImg } from 'reactstrap';
 
+// import Search from "./search"
 // import images
 import img6 from '../../assets/images/banner.svg';
 class Welcome extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      breadcrumbItems: [
-        { title: 'UI Elements', link: '#' },
-        { title: 'Buttons', link: '#' },
-      ],
-      check1: true,
-      check2: false,
-      check3: false,
-      radio1: true,
-      radio2: false,
-      radio3: false,
-    };
+    this.state = {};
   }
 
   render() {
@@ -35,7 +15,15 @@ class Welcome extends Component {
       <React.Fragment>
         <Col>
           <Card>
-            <CardImg className="img-fluid bg-light" src={img6} alt="future" />
+            <div>
+              <CardImg
+                className="img-fluid bg-light"
+                src={img6}
+                alt="future"
+                // width="100%"
+                height="100%"
+              />
+            </div>
             <CardImgOverlay className="d-flex justify-content-around align-content-center align-items-center text-center">
               <div>
                 <h1 className="text-white mt-0">
@@ -46,6 +34,22 @@ class Welcome extends Component {
                   Influencers that you want to work with <br /> and create
                   campaign with ease.
                 </p>
+                <div className="d-flex">
+                  {/* <Form className="app-search w-75 mr-2">
+                    <div className="position-relative">
+                      <Input
+                        type="text"
+                        className="form-control"
+                        // placeholder={this.props.t('Search')}
+                      />
+                      <span className="ri-search-line"></span>
+                    </div>
+                  </Form> */}
+                  {/* <span className="bg-white"> */}
+                    {/* <i className="mdi-table-search" /> */}
+                  {/* </span> */}
+                </div>
+                {/* <Search/> */}
               </div>
             </CardImgOverlay>
           </Card>

@@ -24,7 +24,7 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 
 // import images
-import logodark from '../../../../assets/images/logo-sm-dark.png';
+import logodark from '../../../../assets/images/adLogo.png';
 
 class Register extends Component {
   constructor(props) {
@@ -63,16 +63,16 @@ class Register extends Component {
                 <div className="authentication-page-content p-4 d-flex align-items-center min-vh-100">
                   <div className="w-100">
                     <Row className="justify-content-center">
-                      <Col lg={9}>
+                      <Col lg={8}>
                         <div>
                           <div className="text-left">
                             <div>
                               <Link to="#" className="logo">
-                                <img src={logodark} height="20" alt="logo" />
+                                <img src={logodark} height="25" alt="logo" />
                               </Link>
                             </div>
 
-                            <h4 className="font-size-18 mt-4">
+                            <h4 className="font-size-18 mt-2">
                               Join
                               <span className="text-primary"> Adsplify </span>
                             </h4>
@@ -93,7 +93,7 @@ class Register extends Component {
                             </Alert>
                           )}
 
-                          <div className="p-2 mt-5">
+                          <div className="p-2 mt-3">
                             <AvForm
                               onValidSubmit={this.handleSubmit}
                               className="form-horizontal"
@@ -152,7 +152,7 @@ class Register extends Component {
                               </FormGroup>
 
                               <div className="mt-4 text-center">
-                                <p className="mb-0">Register As:</p>
+                                <p className="mb-2">Register As:</p>
                               </div>
 
                               <Row>

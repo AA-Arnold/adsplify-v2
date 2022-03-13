@@ -11,89 +11,58 @@ import {
   CardText,
 } from 'reactstrap';
 
+import { Avatar, Chip } from '@material-ui/core';
+
 //Import Charts
 import ReactApexChart from 'react-apexcharts';
 import './dashboard.scss';
 import avatar2 from '../../assets/images/users/avatar-2.jpg';
 
+const categories = [
+  'Fashion',
+  'Music',
+  'Dance',
+  'Street',
+  'Music',
+  'LifeStyle',
+  'Food',
+  'Blogging',
+  'Entertainment',
+  'Technology',
+  'Model',
+];
 class Categories extends Component {
   render() {
     return (
-      <React.Fragment>
-        <Col xl={12}>
+      <div className="mb-3">
+        <div className="d-flex justify-content-between">
           <div>
-            <button type="button" class="btn btn-outline-light float-right">
-              View All<i class="ri-send-plane-2-line"></i>
-            </button>
-            <div>
-              <h1 className="card-title">Categories </h1>
-              {/* <footer className="blockquote-footer font-size-12" /> */}
-              <p className="card-title-desc">
-                Hire influencers by categories on all platforms.
-              </p>
-            </div>
-          </div>
+            <h1 className="card-title mt-3">Categories </h1>
+            {/* <footer className="blockquote-footer font-size-12" /> */}
+            <p className="card-title-desc mb-1 d-none d-sm-block">
+              Hire influencers by categories on all platforms.
+            </p>
+          </div>{' '}
+          <button type="button" class="btn btn-outline-light">
+            View All<i class="ri-send-plane-2-line"></i>
+          </button>
+        </div>
 
-          <div className="button-items">
-            <Button color="fashion" className="btn-rounded waves-effect mr-1">
-              <img
-                className="avatar-sm mr-3 rounded-circle"
-                src={avatar2}
-                alt="Nazox"
+        <div className="w-100">
+          <div style={{ overflow: 'auto', whiteSpace: 'nowrap' }}>
+            {categories.map((data) => (
+              <Chip
+                key={data}
+                className="mr-4"
+                avatar={<Avatar alt="Natacha" src={avatar2} />}
+                label={data}
+                variant="outlined"
+                color="warning"
               />
-              Fashion
-            </Button>
-            <Button color="fashion" className="btn-rounded waves-effect mr-1">
-              <img
-                className="avatar-sm mr-3 rounded-circle"
-                src={avatar2}
-                alt="Nazox"
-              />
-              Music
-            </Button>
-            <Button color="fashion" className="btn-rounded waves-effect mr-1">
-              <img
-                className="avatar-sm mr-3 rounded-circle"
-                src={avatar2}
-                alt="Nazox"
-              />
-              Dance
-            </Button>
-            <Button color="fashion" className="btn-rounded waves-effect mr-1">
-              <img
-                className="avatar-sm mr-3 rounded-circle"
-                src={avatar2}
-                alt="Nazox"
-              />
-              Street
-            </Button>
-            <Button color="fashion" className="btn-rounded waves-effect mr-1">
-              <img
-                className="avatar-sm mr-3 rounded-circle"
-                src={avatar2}
-                alt="Nazox"
-              />
-              Fashion
-            </Button>
-            <Button color="fashion" className="btn-rounded waves-effect mr-1">
-              <img
-                className="avatar-sm mr-3 rounded-circle"
-                src={avatar2}
-                alt="Nazox"
-              />
-              Music
-            </Button>
-            <Button color="fashion" className="btn-rounded waves-effect mr-1">
-              <img
-                className="avatar-sm mr-3 rounded-circle"
-                src={avatar2}
-                alt="Nazox"
-              />
-              Dance
-            </Button>
+            ))}
           </div>
-        </Col>
-      </React.Fragment>
+        </div>
+      </div>
     );
   }
 }

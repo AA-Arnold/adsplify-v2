@@ -7,7 +7,20 @@
 }
 
 .authentication-bg{
-    background-image: url("../../../images/passwr.svg");
+    background-image: url("../../../images/passwr.png");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    .bg-overlay{
+        background-color: #292626;
+    }
+
+    @media (max-width: 991px) {
+            display: none;
+    }
+}
+.authentication-bg1{
+    background-image: url("../../../images/login.png");
     height: 100vh;
     background-size: cover;
     background-position: center;

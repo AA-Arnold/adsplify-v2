@@ -64,7 +64,7 @@ class Dashboard extends Component {
           <Container fluid>
             <Row>
               <Col xl={12}>
-                <Row>
+                <Row className="d-none d-sm-flex">
                   <Welcome reports={this.state.reports} />
                 </Row>
                 {/* <MyFeed /> */}
@@ -81,12 +81,35 @@ class Dashboard extends Component {
               </Col>
             </Row>
 
-            <Row>
-              <Categories />
-            </Row>
+            <Categories />
 
             <div>
-              <Instagram />
+              <Instagram
+                title="Top Influencers"
+                description="Hire influencers by categories on all platforms."
+              />
+            </div>
+            <hr/>
+            <div>
+              <Instagram
+                title="Featured Influencers"
+                description="Hire instagram influencers"
+              />
+            </div>
+            
+            <hr/>
+            <div>
+              <Instagram title="Blog" description="Hire influencers" />
+            </div>
+            
+            <hr/>
+            <div>
+              <Instagram title="Music" description="Hire influencers" />
+            </div>
+            
+            <hr/>
+            <div>
+              <Instagram title="Dance" description="Hire influencers" />
             </div>
           </Container>
         </div>

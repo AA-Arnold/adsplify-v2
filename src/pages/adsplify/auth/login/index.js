@@ -22,7 +22,7 @@ import { AvForm, AvField } from 'availity-reactstrap-validation';
 import { checkLogin, apiError } from '../../../../store/actions';
 
 // import images
-import logodark from '../../../../assets/images/LogoAds.svg';
+import logodark from '../../../../assets/images/adLogo.png';
 
 class Login extends Component {
   constructor(props) {
@@ -60,12 +60,12 @@ class Login extends Component {
                 <div className="authentication-page-content p-4 d-flex align-items-center min-vh-100">
                   <div className="w-100">
                     <Row className="justify-content-center">
-                      <Col lg={9}>
+                      <Col lg={8}>
                         <div>
                           <div className="text-left">
                             <div>
                               <Link to="/" className="logo">
-                                <img src={logodark} height="80" alt="logo" />
+                                <img src={logodark} height="30" alt="logo" />
                               </Link>
                             </div>
 
@@ -172,7 +172,7 @@ class Login extends Component {
                 </div>
               </Col>
               <Col lg={6}>
-                <div className="authentication-bg">
+                <div className="authentication-bg1">
                   {/* <div className="bg-overlay"></div> */}
                 </div>
               </Col>
