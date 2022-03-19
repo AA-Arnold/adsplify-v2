@@ -34,8 +34,8 @@ import { toggleRightSidebar } from '../../store/actions';
 //Import logo Images
 import logosmdark from '../../assets/images/logo-sm-dark.png';
 import logodark from '../../assets/images/logo-dark.png';
-import logosmlight from '../../assets/images/LogoAds.svg';
-import logolight from '../../assets/images/logo-light.png';
+import logosmlight from '../../assets/images/logoAds.svg';
+import logolight from '../../assets/images/logoAds.svg';
 
 //Import Social Profile Images
 import github from '../../assets/images/brands/github.png';

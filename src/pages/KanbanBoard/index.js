@@ -7,7 +7,7 @@ import Breadcrumbs from '../../components/Common/Breadcrumb';
 import KanbanBoard from './KanbanBoard';
 
 //Import Logo
-import logosmlight from '../../assets/images/LogoAds.svg';
+import logosmlight from '../../assets/images/logoAds.svg';
 import avatar2 from '../../assets/images/users/avatar-2.jpg';
 import avatar1 from '../../assets/images/users/avatar-1.jpg';
 import avatar4 from '../../assets/images/users/avatar-4.jpg';
