@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import {
   Row,
+  Label,
+  Input,
   Col,
   Card,
   CardBody,

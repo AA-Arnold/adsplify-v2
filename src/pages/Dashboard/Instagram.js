@@ -14,6 +14,7 @@ import {
 import { Us, Gb, Fr, Ng } from 'react-flags-select';
 //Import Charts
 // import ReactApexChart from 'react-apexcharts';
+import { Link } from 'react-router-dom';
 import './dashboard.scss';
 import UserCard from '../../components/Common/userCard';
 
@@ -23,23 +24,24 @@ class Instagram extends Component {
   render() {
     return (
       <React.Fragment>
-        <div className="d-flex justify-content-between">
+        <div className="d-flex justify-content-between align-items-center">
           <div>
-            <h1 className="card-title mt-3">{this.props.title} </h1>
+            <h1 className="card-title mt-3 mb-0">{this.props.title} </h1>
             {/* <footer className="blockquote-footer font-size-12" /> */}
-            <p className="card-title-desc mb-1 d-none d-sm-block">
+            <p className="card-title-desc mb-1 d-none d-sm-block font-size-12">
               {this.props.description}
             </p>
-          </div>{' '}
-          <button type="button" class="btn btn-outline-light">
-            View All<i class="ri-send-plane-2-line"></i>
-          </button>
+          </div>
+          <Link to="#" type="button" className="text-dark">
+            View All
+            <i class="ml-2 p-1 bg-primary text-white rounded fas fa-arrow-right"></i>
+          </Link>
         </div>
-        <Row>
-          {[1, 2, 3, 4].map((data) => (
-            <UserCard key={data} />
+        <div className="listing-row">
+          {this.props.data.map((data, index) => (
+            <UserCard key={index                } data={index} />
           ))}
-        </Row>
+        </div>
       </React.Fragment>
     );
   }

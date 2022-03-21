@@ -7,10 +7,10 @@ import { } from "../../store/actions";
 //Simple bar
 import SimpleBar from "simplebar-react";
 
-import SidebarContent from "./SidebarContent";
+import CategorySidebarContent from "./SidebarContent";
 
 
-class Sidebar extends Component {
+class CategorySidebar extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -24,9 +24,9 @@ class Sidebar extends Component {
                     <div data-simplebar className="h-100">
                         {this.props.type !== "condensed" ? (
                             <SimpleBar style={{ maxHeight: "100%" }}>
-                                <SidebarContent />
+                                <CategorySidebarContent />
                             </SimpleBar>
-                        ) : <SidebarContent />}
+                        ) : <CategorySidebarContent />}
                     </div>
 
                 </div>
@@ -40,4 +40,4 @@ const mapStatetoProps = state => {
         layout: state.Layout
     };
 };
-export default connect(mapStatetoProps, {})(withRouter(Sidebar));
+export default connect(mapStatetoProps, {})(withRouter(CategorySidebar));

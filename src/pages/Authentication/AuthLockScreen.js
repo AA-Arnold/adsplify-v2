@@ -65,7 +65,7 @@ class AuthLockScreen extends Component {
 
                                             <div className="mt-5 text-center">
                                                 <p>Not you ? return <Link to="auth-login" className="font-weight-medium text-primary"> Log in </Link> </p>
-                                                <p>© 2020 Nazox. Crafted with <i className="mdi mdi-heart text-danger"></i> by Themesdesign</p>
+                                                <p>   {new Date().getFullYear()} © Adplify.</p>
                                             </div>
                                         </div>
 

@@ -14,16 +14,12 @@ import {
 import { Avatar, Chip } from '@material-ui/core';
 
 //Import Charts
-import ReactApexChart from 'react-apexcharts';
 import './dashboard.scss';
 import avatar2 from '../../assets/images/users/avatar-2.jpg';
 
 const categories = [
-  'Fashion',
   'Music',
   'Dance',
-  'Street',
-  'Music',
   'LifeStyle',
   'Food',
   'Blogging',
@@ -34,22 +30,15 @@ const categories = [
 class Categories extends Component {
   render() {
     return (
-      <div className="mb-3">
-        <div className="d-flex justify-content-between">
-          <div>
-            <h1 className="card-title mt-3">Categories </h1>
-            {/* <footer className="blockquote-footer font-size-12" /> */}
-            <p className="card-title-desc mb-1 d-none d-sm-block">
-              Hire influencers by categories on all platforms.
-            </p>
-          </div>{' '}
-          <button type="button" class="btn btn-outline-light">
-            View All<i class="ri-send-plane-2-line"></i>
-          </button>
-        </div>
-
+      <div className="my-3">
         <div className="w-100">
           <div style={{ overflow: 'auto', whiteSpace: 'nowrap' }}>
+            <Chip
+              className="mr-4"
+              label="View All"
+              variant="outlined"
+              color="warning"
+            />
             {categories.map((data) => (
               <Chip
                 key={data}

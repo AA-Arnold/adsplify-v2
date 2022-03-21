@@ -7,12 +7,12 @@ const Footer = () => {
               <footer className="footer">
                   <Container fluid>
                         <Row>
-                            <Col sm={6}>
-                                {new Date().getFullYear()} © Nazox.
+                        <Col sm={6}>
+                            {new Date().getFullYear()} © Adplify.
                             </Col>
                             <Col sm={6}>
                                 <div className="text-sm-right d-none d-sm-block">
-                                    Crafted with <i className="mdi mdi-heart text-danger"></i> by Themesdesign
+                                    {/* Crafted with <i className="mdi mdi-heart text-danger"></i> by Themesdesign */}
                                 </div>
                             </Col>
                         </Row>

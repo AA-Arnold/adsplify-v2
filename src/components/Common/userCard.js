@@ -12,15 +12,23 @@ import {
 } from 'reactstrap';
 import { Us, Gb, Fr, Ng } from 'react-flags-select';
 
-import img3 from '../../assets/images/asset-1.jpg';
+import img1 from '../../assets/images/adsProfile/asset-1.png';
+import img2 from '../../assets/images/adsProfile/asset-2.png';
+import img3 from '../../assets/images/adsProfile/asset-3.png';
+import img4 from '../../assets/images/adsProfile/asset-4.png';
 import igIcon from '../../assets/images/icons8-instagram-48.png';
-const UserCard = () => {
+
+const imgData = [img1, img2, img3, img4]
+const UserCard = ({data}) => {
   return (
-    <Col xs={6} md={3}>
+    <div className="p-2 profile-listing-holder">
       <Card className="shadow-md">
-        <CardImg top className="rounded-top rounded-0" src={img3} alt="Skote" />
+        <div className="profile-listing-img-holder">
+          <img loading="lazy" className="profile-listing-img" src={imgData[data]} />
+        </div>
+        {/* <CardImg top className="rounded-top rounded-0" src={img3} alt="Skote" /> */}
         <CardImgOverlay className="p-2">
-          <CardTitle className="text-white float-right  mt-0">
+          <CardTitle className="text-white float-right mt-0">
             <i class="ri-bookmark-2-fill bg-secondary rounded-circle p-1"></i>
           </CardTitle>
           <CardTitle className="text-white float-left  mt-0">
@@ -65,7 +73,7 @@ const UserCard = () => {
           </CardText>
         </CardBody>
       </Card>
-    </Col>
+    </div>
   );
 };
 
