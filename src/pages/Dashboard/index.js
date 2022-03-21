@@ -1,59 +1,22 @@
 import React, { Component } from 'react';
-import { Container, Row, Col, ButtonGroup, Button } from 'reactstrap';
+import { Container, Row, Col } from 'reactstrap';
 
-//Import Breadcrumb
-import Breadcrumbs from '../../components/Common/Breadcrumb';
-
-//Import Components
-import MiniWidgets from './MiniWidgets';
-import RevenueAnalytics from './RevenueAnalytics';
-import SalesAnalytics from './SalesAnalytics';
-import EarningReports from './EarningReports';
-import Sources from './Sources';
-import RecentlyActivity from './RecentlyActivity';
-import RevenueByLocations from './RevenueByLocations';
-import ChatBox from './ChatBox';
-import LatestTransactions from './LatestTransactions';
 import Welcome from './Welcome';
-import MyFeed from './MyFeed';
 import Categories from './Categories';
 import Instagram from './Instagram';
-import TikTok from './TikTok';
-import Featured from './Featured';
-import Blogs from './Blogs';
-import RadioStations from './RadioStations';
+
+const data = [
+  './assets/images/adsProfile/asset-1.png',
+  './assets/images/adsProfile/asset-2.png',
+  './assets/images/adsProfile/asset-3.png',
+  './assets/images/adsProfile/asset-4.png',
+];
 
 class Dashboard extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      breadcrumbItems: [
-        { title: 'Nazox', link: '#' },
-        { title: 'Dashboard', link: '#' },
-      ],
-      reports: [
-        {
-          icon: 'ri-stack-line',
-          title: 'Number of Sales',
-          value: '1452',
-          rate: '2.4%',
-          desc: 'From previous period',
-        },
-        {
-          icon: 'ri-store-2-line',
-          title: 'Sales Revenue',
-          value: '$ 38452',
-          rate: '2.4%',
-          desc: 'From previous period',
-        },
-        {
-          icon: 'ri-briefcase-4-line',
-          title: 'Average Price',
-          value: '$ 15.4',
-          rate: '2.4%',
-          desc: 'From previous period',
-        },
-      ],
+      feed: 1,
     };
   }
 
@@ -65,7 +28,7 @@ class Dashboard extends Component {
             <Row>
               <Col xl={12}>
                 <Row className="d-none d-sm-flex">
-                  <Welcome reports={this.state.reports} />
+                  <Welcome />
                 </Row>
                 {/* <MyFeed /> */}
               </Col>
@@ -73,11 +36,32 @@ class Dashboard extends Component {
                 md={12}
                 className="d-flex justify-content-around align-content-center mb-2"
               >
-                <ButtonGroup className="shadow rounded">
-                  <Button color="white">My Feed</Button>
-                  <Button color="primary">Save Influencer</Button>
-                  <Button color="white">News Feed</Button>
-                </ButtonGroup>
+                <div className="bg-white p-1 rounded-pill">
+                  <button
+                    onClick={() => this.setState({ feed: 1 })}
+                    className={`btn btn-sm btn-${
+                      this.state.feed === 1 ? 'primary' : 'white'
+                    } rounded-pill`}
+                  >
+                    My Feeds
+                  </button>
+                  <button
+                    onClick={() => this.setState({ feed: 2 })}
+                    className={`btn btn-sm btn-${
+                      this.state.feed === 2 ? 'primary' : 'white'
+                    } rounded-pill`}
+                  >
+                    Saved Influenncer
+                  </button>
+                  <button
+                    onClick={() => this.setState({ feed: 3 })}
+                    className={`btn btn-sm btn-${
+                      this.state.feed === 3 ? 'primary' : 'white'
+                    } rounded-pill`}
+                  >
+                    News Feeds
+                  </button>
+                </div>
               </Col>
             </Row>
 
@@ -85,31 +69,45 @@ class Dashboard extends Component {
 
             <div>
               <Instagram
+                data={data}
                 title="Top Influencers"
                 description="Hire influencers by categories on all platforms."
               />
             </div>
-            <hr/>
+            <hr />
             <div>
               <Instagram
+                data={data}
                 title="Featured Influencers"
                 description="Hire instagram influencers"
               />
             </div>
-            
-            <hr/>
+
+            <hr />
             <div>
-              <Instagram title="Blog" description="Hire influencers" />
+              <Instagram
+                data={data}
+                title="Blog"
+                description="Hire influencers"
+              />
             </div>
-            
-            <hr/>
+
+            <hr />
             <div>
-              <Instagram title="Music" description="Hire influencers" />
+              <Instagram
+                data={data}
+                title="Music"
+                description="Hire influencers"
+              />
             </div>
-            
-            <hr/>
+
+            <hr />
             <div>
-              <Instagram title="Dance" description="Hire influencers" />
+              <Instagram
+                data={data}
+                title="Dance"
+                description="Hire influencers"
+              />
             </div>
           </Container>
         </div>

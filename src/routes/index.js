@@ -11,6 +11,9 @@ import AuthLockScreen from "../pages/Authentication/AuthLockScreen";
 // Dashboard
 import Dashboard from "../pages/Dashboard/index";
 
+// Categories
+import Categories from "../pages/Dashboard/MoreCategory";
+
 // Pages Calendar
 import Calendar from "../pages/Calendar/Calendar";
 
@@ -198,6 +201,9 @@ const authProtectedRoutes = [
 	{ path: "/calendar", component: Calendar },
 
 	{ path: "/dashboard", component: Dashboard },
+
+	//category
+	{ path: "/category", component: Categories },
 	
 	// this route should be at the end of all other routes
 	{ path: "/", exact: true, component: () => <Redirect to="/dashboard" /> }
