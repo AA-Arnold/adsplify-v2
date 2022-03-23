@@ -10,6 +10,7 @@ import AuthLockScreen from "../pages/Authentication/AuthLockScreen";
 
 // Dashboard
 import Dashboard from "../pages/Dashboard/index";
+import Profile from "../pages/adsplify/profile";
 
 // Categories
 import Categories from "../pages/Dashboard/MoreCategory";
@@ -147,6 +148,7 @@ const authProtectedRoutes = [
 	{ path: "/ui-rangeslider", component: UiRangeSlider },
 	{ path: "/ui-notifications", component: UiNotifications },
 	{ path : "/ui-roundslider", component : UIRoundSlider },
+	{ path : "/profile", component : Profile },
 
 	// Forms
 	{ path: "/form-elements", component: FormElements },

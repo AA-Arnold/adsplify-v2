@@ -39,7 +39,7 @@ class Instagram extends Component {
         </div>
         <div className="listing-row">
           {this.props.data.map((data, index) => (
-            <UserCard key={index                } data={index} />
+            <UserCard key={index} data={index} />
           ))}
         </div>
       </React.Fragment>
