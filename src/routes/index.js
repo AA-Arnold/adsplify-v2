@@ -10,7 +10,9 @@ import AuthLockScreen from "../pages/Authentication/AuthLockScreen";
 
 // Dashboard
 import Dashboard from "../pages/Dashboard/index";
-import Profile from "../pages/adsplify/profile";
+import Profile from "../pages/adsplify/Profile";
+import CategoriesPage from "../pages/adsplify/categories";
+import InfluencerProfile from "../pages/adsplify/InfluencerProfile";
 
 // Categories
 import Categories from "../pages/Dashboard/MoreCategory";
@@ -149,6 +151,8 @@ const authProtectedRoutes = [
 	{ path: "/ui-notifications", component: UiNotifications },
 	{ path : "/ui-roundslider", component : UIRoundSlider },
 	{ path : "/profile", component : Profile },
+	{ path : "/influencerProfile", component : InfluencerProfile },
+	
 
 	// Forms
 	{ path: "/form-elements", component: FormElements },
@@ -206,6 +210,7 @@ const authProtectedRoutes = [
 
 	//category
 	{ path: "/category", component: Categories },
+	{ path: "/categories", component: CategoriesPage },
 	
 	// this route should be at the end of all other routes
 	{ path: "/", exact: true, component: () => <Redirect to="/dashboard" /> }

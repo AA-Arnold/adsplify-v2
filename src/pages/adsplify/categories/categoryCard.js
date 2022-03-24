@@ -15,19 +15,19 @@ import {
 import { Link } from 'react-router-dom';
 import { Us, Gb, Fr, Ng } from 'react-flags-select';
 
-import img1 from '../../assets/images/adsProfile/asset-1.png';
-import img2 from '../../assets/images/adsProfile/asset-2.png';
-import img3 from '../../assets/images/adsProfile/asset-3.png';
-import img4 from '../../assets/images/adsProfile/asset-4.png';
-import igIcon from '../../assets/images/icons8-instagram-48.png';
+import img1 from '../../../assets/images/adsProfile/asset-1.png';
+import img2 from '../../../assets/images/adsProfile/asset-2.png';
+import img3 from '../../../assets/images/adsProfile/asset-3.png';
+import img4 from '../../../assets/images/adsProfile/asset-4.png';
+import igIcon from '../../../assets/images/icons8-instagram-48.png';
 
-import InfluencerProfile from '../../pages/adsplify/InfluencerProfile';
+import InfluencerProfile from '../InfluencerProfile';
 
-const imgData = [img1, img2, img3, img4];
+const imgData = [img1, img2, img3, img4, img1, img2, img3, img4, img1, img2, img3, img4];
 const UserCard = ({ data }) => {
   const [showProfile, SetShowProfile] = useState(false);
   return (
-    <div className="p-2 profile-listing-holder">
+    <div className="p-2">
       <Card className="shadow-md" onClick={() => SetShowProfile(true)}>
         <div className="profile-listing-img-holder">
           <img

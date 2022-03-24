@@ -27,7 +27,7 @@ class Dashboard extends Component {
           <Container fluid>
             <Row>
               <Col xl={12}>
-                <Row className="d-none d-sm-flex">
+                <Row>
                   <Welcome />
                 </Row>
                 {/* <MyFeed /> */}

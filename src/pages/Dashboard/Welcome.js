@@ -22,7 +22,7 @@ class Welcome extends Component {
     return (
       <React.Fragment>
         <Col>
-          <div>
+          <div className="d-none d-sm-flex">
             <div className="mb-2 home-bg rounded">
               <div className="d-flex justify-content-around align-items-center h-100">
                 <div className="col-6 text-center">
@@ -41,7 +41,7 @@ class Welcome extends Component {
                         value={this.state.username}
                         type="text"
                         className="form-control p-0 px-2"
-                        placeholder="location, categories aand more..."
+                        placeholder="location, categories and more..."
                       />
                     </FormGroup>
                     <span
@@ -62,6 +62,26 @@ class Welcome extends Component {
                 </div>
               </div>
             </div>
+          </div>
+
+          <div className="d-flex d-sm-none justify-content-around mb-3">
+            <div className="col-11 mx-0">
+              <FormGroup className="search-form-group-custom shadow-sm rounded mb-1">
+                <i className=" ri-search-line search-custom-input-icon"></i>
+                <input
+                  value={this.state.username}
+                  type="text"
+                  className="form-control p-0 px-2"
+                  placeholder="location, categories and more..."
+                />
+              </FormGroup>
+            </div>
+            <span
+              style={{ height: '40px', padding: '0.6rem' }}
+              className="bg-white ml-2 shadow-sm rounded col-auto"
+            >
+              <i className="ri-shape-2-line" />
+            </span>
           </div>
         </Col>
       </React.Fragment>

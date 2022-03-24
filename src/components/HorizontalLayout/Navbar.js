@@ -68,7 +68,7 @@ class Navbar extends Component {
     return (
       <React.Fragment>
         <div className="topnav d-none d-sm-flex">
-          <Container fluid>
+          <Container fluid className="bg-light mb-1 rounded">
             <nav
               className="navbar navbar-light navbar-expand-lg topnav-menu d-flex justify-content-between py-1"
               id="navigation"
@@ -801,6 +801,8 @@ class Navbar extends Component {
               </Collapse>
 
               <button className="btn btn-primary float-right">
+                <i
+                  className=" ri-add-fill font-size-15 mr-2"/>
                 Add New Post
               </button>
             </nav>
