@@ -32,7 +32,7 @@ class Instagram extends Component {
               {this.props.description}
             </p>
           </div>
-          <Link to="#" type="button" className="text-dark">
+          <Link to="/categories" type="button" className="text-dark">
             View All
             <i class="ml-2 p-1 bg-primary text-white rounded fas fa-arrow-right"></i>
           </Link>

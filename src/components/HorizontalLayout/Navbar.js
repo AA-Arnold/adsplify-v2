@@ -87,14 +87,14 @@ class Navbar extends Component {
                   </li>
 
                   <li className="nav-item">
-                    <Link className="nav-link" to="/">
+                    <Link className="nav-link" to="/campaign">
                       <i className=" ri-volume-down-line font-size-16 mr-2"></i>{' '}
                       {this.props.t('Campaign')}
                     </Link>
                   </li>
 
                   <li className="nav-item">
-                    <Link className="nav-link" to="/ecommerce-checkout">
+                    <Link className="nav-link" to="/payment">
                       <i className="ri-wallet-line mr-2"></i>{' '}
                       {this.props.t('Payment')}
                     </Link>

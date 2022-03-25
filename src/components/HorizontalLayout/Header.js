@@ -365,7 +365,7 @@ class Header extends Component {
 
               <ProfileMenu />
 
-              <div
+              {/* <div
                 onClick={this.toggleRightbar}
                 className="dropdown d-inline-block"
               >
@@ -376,7 +376,7 @@ class Header extends Component {
                 >
                   <i className="ri-settings-2-line"></i>
                 </Button>
-              </div>
+              </div> */}
             </div>
           </div>
         </header>
