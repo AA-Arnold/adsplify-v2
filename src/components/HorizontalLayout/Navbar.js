@@ -799,12 +799,12 @@ class Navbar extends Component {
                   )}
                 </ul>
               </Collapse>
-
-              <button className="btn btn-primary float-right">
-                <i
-                  className=" ri-add-fill font-size-15 mr-2"/>
-                Add New Post
-              </button>
+              <Link to="/create_campaign">
+                <button className="btn btn-primary float-right">
+                  <i className=" ri-add-fill font-size-15 mr-2" />
+                  Add New Post
+                </button>
+              </Link>
             </nav>
           </Container>
         </div>

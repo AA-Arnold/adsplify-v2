@@ -29,7 +29,7 @@ class Categories extends Component {
               className="mr-4"
               label="View All"
               variant="outlined"
-              color="warning"
+              // color="warning"
             />
             {categories.map((data) => (
               <Link to="/categories" key={data}>
@@ -38,7 +38,7 @@ class Categories extends Component {
                   avatar={<Avatar alt="Natacha" src={avatar2} />}
                   label={data}
                   variant="outlined"
-                  color="warning"
+                  // color="warning"
                 />
               </Link>
             ))}

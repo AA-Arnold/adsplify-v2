@@ -39,48 +39,44 @@ const UserCard = ({ data }) => {
         {/* <CardImg top className="rounded-top rounded-0" src={img3} alt="Skote" /> */}
         <CardImgOverlay className="p-2">
           <CardTitle className="text-white float-right mt-0">
-            <i class="ri-bookmark-2-fill bg-secondary rounded-circle p-1"></i>
+            <i className="ri-bookmark-2-fill bg-secondary rounded-circle p-1"></i>
           </CardTitle>
           <CardTitle className="text-white float-left  mt-0">
             Falade Timilehin
           </CardTitle>
         </CardImgOverlay>
         <CardBody className="p-2 pt-4">
-          <CardText>
-            <div style={{ position: 'relative' }}>
-              <div className="d-flex justify-content-between">
-                <div>
-                  <h1 className="card-title font-size-12 mb-0">
-                    <Us /> | Lagos
-                  </h1>
-                </div>
-                <h1 className="card-title text-right  font-size-12  mb-0">
-                  $350
-                </h1>
+          <div style={{ position: 'relative' }}>
+            <div className="d-flex justify-content-between">
+              <div>
+                <Us /> | Lagos
               </div>
-
-              <div className="text-muted mr-3">
-                {[1, 2, 3].map((star) => (
-                  <span
-                    key={star}
-                    className="mdi mdi-star font-size-10 text-warning mr-1"
-                  ></span>
-                ))}
-                <span className="mdi mdi-star font-size-10 mr-1"></span>
-              </div>
-              <span
-                className="rounded-circle bg-white"
-                style={{
-                  position: 'absolute',
-                  top: '-38px',
-                  right: '0',
-                }}
-              >
-                <img src={igIcon} alt="icon" height={18} className="m-2" />
-                {/* <i class="ri-bookmark-2-fill bg-white rounded-circle p-2 font-size-16"></i> */}
-              </span>
+              <h1 className="card-title text-right  font-size-12  mb-0">
+                $350
+              </h1>
             </div>
-          </CardText>
+
+            <div className="text-muted mr-3">
+              {[1, 2, 3].map((star) => (
+                <span
+                  key={star}
+                  className="mdi mdi-star font-size-10 text-warning mr-1"
+                ></span>
+              ))}
+              <span className="mdi mdi-star font-size-10 mr-1"></span>
+            </div>
+            <span
+              className="rounded-circle bg-white"
+              style={{
+                position: 'absolute',
+                top: '-38px',
+                right: '0',
+              }}
+            >
+              <img src={igIcon} alt="icon" height={18} className="m-2" />
+              {/* <i className="ri-bookmark-2-fill bg-white rounded-circle p-2 font-size-16"></i> */}
+            </span>
+          </div>
         </CardBody>
       </Card>
       <Modal

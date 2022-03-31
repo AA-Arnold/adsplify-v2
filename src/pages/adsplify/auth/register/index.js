@@ -158,7 +158,7 @@ class Register extends Component {
                               <Row>
                                 <Col md={6}>
                                   <Button
-                                    color="primary"
+                                    color="primary mb-2"
                                     className="w-100 waves-effect waves-light"
                                     type="submit"
                                   >
@@ -170,7 +170,7 @@ class Register extends Component {
 
                                 <Col md={6}>
                                   <Button
-                                    color="primary"
+                                    color="primary mb-2"
                                     className="w-100 waves-effect waves-light"
                                     type="submit"
                                   >

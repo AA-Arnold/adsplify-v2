@@ -34,7 +34,7 @@ class Instagram extends Component {
           </div>
           <Link to="/categories" type="button" className="text-dark">
             View All
-            <i class="ml-2 p-1 bg-primary text-white rounded fas fa-arrow-right"></i>
+            <i className="ml-2 p-1 bg-primary text-white rounded fas fa-arrow-right"></i>
           </Link>
         </div>
         <div className="listing-row">
