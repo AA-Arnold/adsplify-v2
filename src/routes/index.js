@@ -13,6 +13,7 @@ import Dashboard from '../pages/Dashboard/index';
 import Profile from '../pages/adsplify/Profile';
 import Payment from '../pages/adsplify/Payment';
 import CreateCampaign from '../pages/adsplify/campaigns/createCampaign';
+import Campaign from '../pages/adsplify/campaigns';
 
 import CategoriesPage from '../pages/adsplify/categories';
 import InfluencerProfile from '../pages/adsplify/InfluencerProfile';
@@ -210,7 +211,7 @@ const authProtectedRoutes = [
 
   { path: '/dashboard', component: Dashboard },
   { path: '/payment', component: Maintenance },
-  { path: '/campaign', component: Maintenance },
+  { path: '/campaign', component: Campaign },
   { path: '/create_campaign', component: CreateCampaign },
 
   //category
