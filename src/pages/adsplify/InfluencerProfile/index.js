@@ -218,7 +218,7 @@ class InfluencerProfile extends Component {
                       1-2 sample story post, with tags and content from above
                     </p>
                   </div>
-                  <p>
+                  <p className="mb-0">
                     $200{' '}
                     <i className="ml-2 text-primary ri-record-circle-fill" />
                   </p>
@@ -237,8 +237,9 @@ class InfluencerProfile extends Component {
                         1-2 sample story post, with tags and content from above
                       </p>
                     </div>
-                    <p>
-                      $200 <i className="ml-2  ri-record-circle-fill" />
+                    <p className="mb-0">
+                      $200{' '}
+                      <i className="ml-2   ri-checkbox-blank-circle-line" />
                     </p>
                   </CardBody>
                 </Card>

@@ -18,6 +18,13 @@ import Campaign from '../pages/adsplify/campaigns';
 import CategoriesPage from '../pages/adsplify/categories';
 import InfluencerProfile from '../pages/adsplify/InfluencerProfile';
 
+//influencer page
+import InfluencerPage from '../pages/adsplify/infuencerPage/homePaga';
+
+import ManageCampaign from '../pages/adsplify/infuencerPage/campaignPage/managaCampaign'
+import InfluencerCampaign from '../pages/adsplify/infuencerPage/campaignPage'
+
+
 // Categories
 import Categories from '../pages/Dashboard/MoreCategory';
 
@@ -156,6 +163,10 @@ const authProtectedRoutes = [
   { path: '/profile', component: Profile },
   { path: '/payment', component: Payment },
   { path: '/influencerProfile', component: InfluencerProfile },
+
+  { path: '/dashboard2', component: InfluencerPage },
+  { path: '/manage_campaign', component: ManageCampaign },
+  { path: '/campaign2', component: InfluencerCampaign },
 
   // Forms
   // { path: "/form-elements", component: FormElements },

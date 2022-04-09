@@ -36,7 +36,6 @@ const UserCard = ({ data }) => {
             src={imgData[data]}
           />
         </div>
-        {/* <CardImg top className="rounded-top rounded-0" src={img3} alt="Skote" /> */}
         <CardImgOverlay className="p-2">
           <CardTitle className="text-white float-right mt-0">
             <i className="ri-bookmark-2-fill bg-secondary rounded-circle p-1"></i>
@@ -74,7 +73,6 @@ const UserCard = ({ data }) => {
               }}
             >
               <img src={igIcon} alt="icon" height={18} className="m-2" />
-              {/* <i className="ri-bookmark-2-fill bg-white rounded-circle p-2 font-size-16"></i> */}
             </span>
           </div>
         </CardBody>

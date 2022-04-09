@@ -15,6 +15,7 @@ import { Ng } from 'react-flags-select';
 
 import BasicForm from './BasicForm';
 import SecurityForm from './SecurityForm';
+import RateCard from './rateCard';
 
 const categories = [
   'Music',
@@ -29,7 +30,7 @@ class InfluencerProfile extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      showBasicForm: true,
+      whatToShow: 'basicInfo',
     };
   }
 
@@ -117,9 +118,11 @@ class InfluencerProfile extends Component {
                     <div className="bg-white p-1  text-center">
                       <div className="d-inline-block bg-light shadow-lg rounded-pill p-1">
                         <button
-                          onClick={() => this.setState({ showBasicForm: true })}
+                          onClick={() =>
+                            this.setState({ whatToShow: 'basicInfo' })
+                          }
                           className={`mr-1 btn btn-sm btn-${
-                            this.state.showBasicForm === true
+                            this.state.whatToShow === 'basicInfo'
                               ? 'primary'
                               : 'white'
                           } rounded-pill`}
@@ -128,25 +131,39 @@ class InfluencerProfile extends Component {
                         </button>
                         <button
                           onClick={() =>
-                            this.setState({ showBasicForm: false })
+                            this.setState({ whatToShow: 'security' })
                           }
                           className={`btn btn-sm btn-${
-                            this.state.showBasicForm === false
+                            this.state.whatToShow === 'security'
                               ? 'primary'
                               : 'white'
                           } rounded-pill`}
                         >
                           Security
                         </button>
+
+                        <button
+                          onClick={() =>
+                            this.setState({ whatToShow: 'rateCard' })
+                          }
+                          className={`btn btn-sm btn-${
+                            this.state.whatToShow === 'rateCard'
+                              ? 'primary'
+                              : 'white'
+                          } rounded-pill`}
+                        >
+                          Rate card
+                        </button>
                       </div>
                     </div>
-                    {this.state.showBasicForm ? (
+                    {this.state.whatToShow === 'basicInfo' ? (
                       <BasicForm />
                     ) : (
-                      <SecurityForm />
+                      this.state.whatToShow === 'security' && <SecurityForm />
                     )}
                   </CardBody>
                 </Card>
+                {this.state.whatToShow === 'rateCard' && <RateCard />}
               </Col>
             </Row>
           </Container>
