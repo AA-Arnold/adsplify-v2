@@ -68,7 +68,7 @@ class Navbar extends Component {
     return (
       <React.Fragment>
         <div className="topnav d-none d-sm-flex">
-          <Container fluid>
+          <Container fluid className="bg-light mb-1 rounded">
             <nav
               className="navbar navbar-light navbar-expand-lg topnav-menu d-flex justify-content-between py-1"
               id="navigation"
@@ -87,14 +87,14 @@ class Navbar extends Component {
                   </li>
 
                   <li className="nav-item">
-                    <Link className="nav-link" to="/">
+                    <Link className="nav-link" to="/campaign">
                       <i className=" ri-volume-down-line font-size-16 mr-2"></i>{' '}
                       {this.props.t('Campaign')}
                     </Link>
                   </li>
 
                   <li className="nav-item">
-                    <Link className="nav-link" to="/ecommerce-checkout">
+                    <Link className="nav-link" to="/payment">
                       <i className="ri-wallet-line mr-2"></i>{' '}
                       {this.props.t('Payment')}
                     </Link>
@@ -799,10 +799,12 @@ class Navbar extends Component {
                   )}
                 </ul>
               </Collapse>
-
-              <button className="btn btn-primary float-right">
-                Add New Post
-              </button>
+              <Link to="/create_campaign">
+                <button className="btn btn-primary float-right">
+                  <i className=" ri-add-fill font-size-15 mr-2" />
+                  Add New Post
+                </button>
+              </Link>
             </nav>
           </Container>
         </div>

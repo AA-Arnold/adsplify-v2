@@ -62,6 +62,32 @@
   }
 }
 
+
+.auth-form-group-custom-campaign {
+  position: relative;
+  .form-control {
+    // height: 60px;
+    padding-top: 10px;
+    padding-left: 40px;
+  }
+
+  label {
+    position: absolute;
+    top: 7px;
+    left: 60px;
+  }
+
+  .auti-custom-input-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 19px;
+    font-size: 12px;
+    color: $primary;
+  }
+}
+
+
 .search-form-group-custom {
   position: relative;
   .form-control {

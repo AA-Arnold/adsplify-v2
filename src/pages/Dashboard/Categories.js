@@ -1,15 +1,7 @@
 import React, { Component } from 'react';
-import {
-  Row,
-  Label,
-  Input,
-  Col,
-  Card,
-  CardBody,
-  ButtonGroup,
-  Button,
-  CardText,
-} from 'reactstrap';
+// import { Row } from 'reactstrap';
+
+import { Link } from 'react-router-dom';
 
 import { Avatar, Chip } from '@material-ui/core';
 
@@ -37,17 +29,18 @@ class Categories extends Component {
               className="mr-4"
               label="View All"
               variant="outlined"
-              color="warning"
+              // color="warning"
             />
             {categories.map((data) => (
-              <Chip
-                key={data}
-                className="mr-4"
-                avatar={<Avatar alt="Natacha" src={avatar2} />}
-                label={data}
-                variant="outlined"
-                color="warning"
-              />
+              <Link to="/categories" key={data}>
+                <Chip
+                  className="mr-4"
+                  avatar={<Avatar alt="Natacha" src={avatar2} />}
+                  label={data}
+                  variant="outlined"
+                  // color="warning"
+                />
+              </Link>
             ))}
           </div>
         </div>
